@@ -34,7 +34,7 @@ function guess() {
 
 // 5 Create setHiddenFields Function
 function setHiddenFields(){
-	var answer.value = Math.floor(Math.random() * 10000).toString();
+	answer.value = Math.floor(Math.random() * 10000).toString();
 
 	//6 Make sure the hidden input answer's value is exactly 4 characters long
 	while(answer.value.length < 4){
