@@ -12,7 +12,7 @@ function guess() {
 	// 11 Call the validateInput function from the guess function
 	if(!validateInput(input.value)){
 		return;
-	} 
+	}
 	attemot.value++;
 
 	// 14 Setup Win Condition
@@ -35,13 +35,11 @@ function guess() {
 // 5 Create setHiddenFields Function
 function setHiddenFields(){
 	var answer.value = Math.floor(Math.random() * 10000).toString();
-	
+
 	//6 Make sure the hidden input answer's value is exactly 4 characters long
 	while(answer.value.length < 4){
 		answer.value = '0' + answer.value;
 	} 
-	console.log(answer.length);
-	console.log(answer);
 
 	// 7 Set the hidden input attempt's value to zero
 	attempt.value = 0;
@@ -99,5 +97,3 @@ function showReplay() {
 	document.getElementById('guessing-div').style.display = 'none';
 	document.getElementById('replay-div').style.display = 'block';
 };
-
-
