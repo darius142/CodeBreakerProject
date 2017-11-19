@@ -13,7 +13,7 @@ function guess() {
 	if(!validateInput(input.value)){
 		return;
 	}
-	attemot.value++;
+	attempt.value++;
 
 	// 14 Setup Win Condition
 	if(getResults(input.value)){
